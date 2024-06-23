@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <View
+        android:id="@+id/v"
+        android:layout_width="12dp"
+        android:layout_height="2dp"
+        android:background="@drawable/home_server_tab_shape"
+        android:backgroundTint="@drawable/main_tab_selector"/>
+    <!--
+        android:backgroundTint="@drawable/main_tab_selector"-->
+
+</LinearLayout>

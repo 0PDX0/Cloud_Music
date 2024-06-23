@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
+            android:src="@mipmap/home_top_more" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/podcast_top_tab_layout"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            app:tabMode="scrollable"
+            app:tabTextColor="#66262626"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="@style/podcast_tab"
+            app:tabIndicatorColor="@color/red"
+            app:tabIndicator="@drawable/podcast_tab_layer_list"
+            app:minHeight="0dp"
+            app:minWidth="0dp"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
+            android:src="@mipmap/plus" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_margin="10dp"
+            android:src="@mipmap/home_top_search"
+            app:layout_constraintLeft_toLeftOf="@id/podcast_search"
+            app:layout_constraintTop_toTopOf="@id/podcast_search"
+            app:layout_constraintBottom_toBottomOf="@id/podcast_search" />
+
+        <EditText
+            android:id="@+id/podcast_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingStart="30dp"
+            android:background="@drawable/podcast_seach_shape"
+            android:inputType="text"
+            android:hint="大家都在听 音乐咖啡馆"
+            android:textSize="13sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/podcast_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
